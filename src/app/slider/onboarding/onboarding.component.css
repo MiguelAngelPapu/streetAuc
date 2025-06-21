@@ -1,0 +1,84 @@
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slider-progress {
+    margin: 0 5%;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.dot {
+    height: 2px;
+    flex: 1;
+    border-radius: 2px;
+    background-color: var(--Light-UI-Element-contrast-30);
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: var(--UI-Black);
+}
+
+.slide {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fade 0.3s ease-in-out;
+}
+
+.slide img {
+    width: 90%;
+    max-width: 318px;
+    height: 40vh;
+    object-fit: contain;
+}
+
+.slide p {
+    width: 60%;
+    max-width: 242px;
+    margin-top: 32px;
+    font-family: "Ag Heading 2";
+    text-align: center;
+}
+
+.slide.active {
+    display: flex;
+}
+
+.controls {
+    margin-top: 30px;
+}
+
+.controls button {
+    margin-bottom: 12px;
+    font-family: "Ag Button Large";
+    width: 90%;
+    height: 64px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--UI-Black);
+    color: var(--Light-Text-White);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

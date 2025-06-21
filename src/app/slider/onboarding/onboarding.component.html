@@ -1,0 +1,22 @@
+<div class="slider-container">
+    <div class="slider-progress">
+        @for (slide of slides; track $index) {
+        <span class="dot" [class.active]="$index === currentIndex()"></span>
+        }
+    </div>
+
+    @for (slide of slides; track $index) {
+    <div class="slide" [class.active]="$index === currentIndex()">
+        <img [src]="slide.image" alt="Slide image" />
+        <p [innerHTML]="slide.text"></p>
+    </div>
+    }
+
+    <div class="controls">
+        @if (!isLastSlide()) {
+        <button (click)="nextSlide()">Next</button>
+        } @else {
+        <button (click)="startApp()">Start</button>
+        }
+    </div>
+</div>
