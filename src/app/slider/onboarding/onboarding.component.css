@@ -51,6 +51,14 @@
     text-align: center;
 }
 
+:host ::ng-deep .loop {
+    background-image: url('/loop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 6px;
+}
+
 .slide.active {
     display: flex;
 }

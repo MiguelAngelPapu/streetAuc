@@ -11,7 +11,7 @@ export class OnboardingComponent {
   slides = [
     {
       image: './slider_1.png',
-      text: 'Discover the finest street art masterpiece.'
+      text: 'Discover the finest street art <span class="loop">masterpiece.</span>'
     },
     {
       image: './slider_2.png',
