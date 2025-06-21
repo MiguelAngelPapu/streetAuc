@@ -1,4 +1,5 @@
 import { Component, computed, signal } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-onboarding',
@@ -24,6 +25,9 @@ export class OnboardingComponent {
   ];
 
   isLastSlide = computed(() => this.currentIndex() === this.slides.length - 1);
+
+  constructor(private router: Router) { }
+
   nextSlide(): void {
     if (!this.isLastSlide()) {
       this.currentIndex.update(v => v + 1);
@@ -31,7 +35,6 @@ export class OnboardingComponent {
   }
 
   startApp(): void {
-    console.log('Starting app...');
-    // Aquí iría el router.navigate()
+    this.router.navigateByUrl('/login');
   }
 }

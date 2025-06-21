@@ -8,5 +8,9 @@ export const routes: Routes = [
     {
         path: 'slider',
         loadComponent: () => import('./slider/onboarding/onboarding.component').then(o => o.OnboardingComponent)
+    },
+    {
+        path: 'login',
+        loadComponent: () => import('./login/login.component').then(l => l.LoginComponent)
     }
 ];

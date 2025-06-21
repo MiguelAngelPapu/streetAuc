@@ -15,6 +15,7 @@
 
     --Light-UI-Element-contrast-30: color-mix(in srgb, var(--UI-Black) 30%, transparent);
     --Light-Text-White: #ffffff;
+    --Light-Background-Element: #ffffff;
 }
 
 @font-face {
@@ -22,6 +23,24 @@
     src: url(/font/Merriweather/static/Merriweather_36pt-Regular.ttf);
     font-size: 32px;
     font-weight: 300;
+}
+
+@font-face {
+    font-family: "Ag TX2";
+    src: url(/font/Roboto/static/Roboto-Regular.ttf);
+    font-size: 15px;
+    color: var(--Black-900);
+    letter-spacing: -1%;
+    line-height: auto;
+}
+
+@font-face {
+    font-family: "Ag Heading 1";
+    src: url(/font/Poppins/Poppins-Medium.ttf);
+    font-size: 24px;
+    color: var(--Black-900);
+    letter-spacing: -0.5px;
+    line-height: 32px;
 }
 
 @font-face {
