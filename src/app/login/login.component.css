@@ -12,12 +12,20 @@
 }
 .login-header h2{
     font-family: "Ag Heading 1";
+    color: var(--Black-900);
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    line-height: 32px;
 }
 .login-header img{
     margin-top: 2rem;
 }
 .login-header h1{
     font-family: "Merriweather_36pt-Regular";
+    font-size: 32px;
+    color: var(--Black-900);
+    letter-spacing: 0px;
+    line-height: 37.4px;
 }
 .login-form{
     width: 90%;
@@ -35,6 +43,9 @@
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 22px;
 }
 .login-form button:last-child{
     background-color: var(--Light-Background-Element);
@@ -51,6 +62,9 @@
 .login-footer p{
     font-family: "Ag TX2";
     color: var(--Black-900);
+    font-size: 15px;
+    letter-spacing: -1%;
+    line-height: auto;
 }
 .social-login{
     display: flex;

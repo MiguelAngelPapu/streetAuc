@@ -1,0 +1,71 @@
+<div class="sign-in-container">
+    <div class="back-button">
+        <img [routerLink]='["/login"]' src="./back.png">
+    </div>
+    <div class="sign-in-header">
+        <h1>It's great to have you back!</h1>
+        <p>Sign in and continue your journey</p>
+    </div>
+    <form action="" method="post" class="sign-in-form">
+        <div class="floating-label-input">
+           <input
+                type="email"
+                id="email"
+                [value]="email()"
+                (input)="email.set($any($event.target).value)"
+                required
+            />
+            <label
+                for="email"
+                [class.active]="email()"
+            >Email</label>
+        </div>
+
+        <div class="floating-label-input">
+           <input
+                [type]="isVisible() ? 'text' : 'password'"
+                id="password"
+                [value]="password()"
+                (input)="password.set($any($event.target).value)"
+                required
+            />
+            <label
+                for="password"
+                [class.active]="password()"
+            >Password</label>
+            <button
+                type="button"
+                class="eye-icon"
+                (click)="toggleVisibility()"
+                aria-label="Toggle password visibility"
+            >
+                <img
+                    [src]="isVisible() ? './eye_line.svg' : './eye_off.svg'"
+                    alt="Toggle visibility"
+                    width="24"
+                    height="24"
+                />
+            </button>
+        </div>
+        <div class="login-form">
+            <input type="submit" value="Sign In"/>
+        </div>
+        <div class="sign-in-footer-links">
+            <p>New user? <a href="/register">Register</a></p>
+            <p><a href="/register">Forgot password?</a></p>
+        </div>
+    </form>
+     <div class="sign-in-footer">
+        <p>or</p>
+        <div class="social-login">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./google.png" alt="" srcset="">
+                <span>Sign in with google</span>
+            </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./apple_white.png" alt="" srcset="">
+                <span>Sign in with apple</span>
+            </a>
+        </div>
+    </div>
+</div>

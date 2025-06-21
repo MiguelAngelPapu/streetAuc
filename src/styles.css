@@ -5,8 +5,12 @@
 }
 
 :root {
+    --Primary-500: #ED893E;
+
     --UI-Black: #111111;
     --UI-White: #ffffff;
+    --UI-Gray: #727272;
+    --UI-Disable: #E0E0E0;
 
     --splash-screen-bg: var(--UI-Black);
     --splash-screen-text: var(--UI-White);
@@ -15,48 +19,53 @@
 
     --Light-UI-Element-contrast-30: color-mix(in srgb, var(--UI-Black) 30%, transparent);
     --Light-Text-White: #ffffff;
+    --Light-Text-White-Gray: #333333;
     --Light-Background-Element: #ffffff;
+    --Light-Background-Element-Gray: #333333;
 }
 
 @font-face {
     font-family: "Merriweather_36pt-Regular";
     src: url(/font/Merriweather/static/Merriweather_36pt-Regular.ttf);
-    font-size: 32px;
     font-weight: 300;
 }
 
 @font-face {
     font-family: "Ag TX2";
     src: url(/font/Roboto/static/Roboto-Regular.ttf);
-    font-size: 15px;
-    color: var(--Black-900);
-    letter-spacing: -1%;
-    line-height: auto;
 }
 
 @font-face {
     font-family: "Ag Heading 1";
     src: url(/font/Poppins/Poppins-Medium.ttf);
-    font-size: 24px;
-    color: var(--Black-900);
-    letter-spacing: -0.5px;
-    line-height: 32px;
+    
 }
 
 @font-face {
     font-family: "Ag Heading 2";
     src: url(/font/Poppins/Poppins-Medium.ttf);
-    font-size: 20px;
-    color: var(--Black-900);
-    letter-spacing: -0.5px;
-    line-height: 26px;
 }
-
+@font-face {
+    font-family: "Ag Body S Regular";
+    src: url(/font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Ag Paragraph Large";
+    src: url(/font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Ag Paragraph Medium";
+    src: url(/font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Ag Paragraph Small";
+    src: url(/font/Poppins/Poppins-Medium.ttf);
+}
 @font-face {
     font-family: "Ag Button Large";
     src: url(/font/Poppins/Poppins-Medium.ttf);
-    font-size: 22px;
-    color: var(--Black-900);
-    letter-spacing: -0.5px;
-    line-height: 22px;
+}
+@font-face {
+    font-family: "Ag Button Small";
+    src: url(/font/Poppins/Poppins-Medium.ttf);
 }

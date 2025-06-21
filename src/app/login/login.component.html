@@ -1,12 +1,12 @@
 <div class="login-container">
-    <div class="login-header">
+    <div [routerLink]='["/"]' class="login-header">
         <h2>Welcome to</h2>
         <img src="./logo_black.png" alt="" srcset="">
         <h1>StreetAuc</h1>
     </div>
     <div class="login-form">
         <button>Register</button>
-        <button>Sign In</button>
+        <button [routerLink]='["/sign-in"]'>Sign In</button>
     </div>
     <div class="login-footer">
         <p>or</p>

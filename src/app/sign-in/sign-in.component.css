@@ -1,0 +1,200 @@
+.sign-in-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.back-button {
+    width: 90%;
+}
+.back-button img{
+    cursor: pointer !important;
+}
+.sign-in-header {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in-header h1 {
+    font-family: "Ag Heading 1";
+    color: var(--Black-900);
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    line-height: 32px;
+}
+
+.sign-in-header p {
+    font-family: "Ag Paragraph Large";
+    font-size: 16px;
+    color: var(--UI-Gray);
+    letter-spacing: -0.5px;
+    line-height: 26px;
+}
+
+.sign-in-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+/******* Inpuy con la animacion del label *******/
+
+.floating-label-input {
+    width: 100%;
+    position: relative;
+    border: 1px solid var(--UI-Disable);
+    border-radius: 8px;
+    padding: 0 16px;
+    background-color: var(--Light-Background-Element);
+}
+
+.floating-label-input input {
+    background: transparent;
+    width: 100%;
+    height: 58px;
+    border: none;
+    outline: none;
+    margin: 0;
+    z-index: 1;
+    padding-top: 18px;
+    position: relative;
+    font-family: "Ag Paragraph Small";
+    font-size: 16px;
+    color: var(--UI-Black);
+    line-height: 18px;
+    letter-spacing: 0px;
+}
+
+.floating-label-input label {
+    position: absolute;
+    z-index: 2;
+    left: 16px;
+    top: 16px;
+    transition: all 0.2s ease-out;
+    background-color: transparent;
+    pointer-events: none;
+    font-family: "Ag Paragraph Large";
+    color: var(--UI-Gray);
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+}
+
+.floating-label-input input:focus+label,
+.floating-label-input label.active {
+    top: 11px;
+    font-family: "Ag Body S Regular";
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+}
+/******* Icono de los inputs *******/
+.eye-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+/******************************************/
+.login-form{
+    width: 100%;
+    margin-top: 32px;
+}
+.login-form input{
+    width: 100%;
+    height: 58px;
+    background-color: var(--Black-900);
+    color: var(--Light-Text-White);
+    font-family: "Ag Button Large";
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 22px;
+}
+.sign-in-footer-links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sign-in-footer-links p{
+    font-family: "Ag Paragraph Medium";
+    color: var(--Black-900);
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0px;
+}
+.sign-in-footer-links p a{
+    font-family: "Ag Paragraph Medium";
+    color: var(--Primary-500);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+.sign-in-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sign-in-footer p{
+    font-family: "Ag TX2";
+    color: var(--Black-900);
+    font-size: 15px;
+    letter-spacing: -1%;
+    line-height: auto;
+}
+
+.social-login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 33px;
+}
+.social-login a{
+    width: 90%;
+    height: 58px;
+    text-decoration: none;
+    background-color: var(--Light-Background-Element);
+    color: var(--Light-Text-White-Gray);
+    font-family: "Ag Button Large";
+    border-radius: 8px;
+    border: 1px solid var(--UI-Disable);
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.social-login a:last-child{
+    background-color: var(--Light-Background-Element-Gray);
+    color: var(--Light-Text-White);
+}
+.social-login a img{
+    width: 48px;
+    height: 48px;
+}

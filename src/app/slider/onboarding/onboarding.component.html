@@ -16,7 +16,7 @@
         @if (!isLastSlide()) {
         <button (click)="nextSlide()">Next</button>
         } @else {
-        <button (click)="startApp()">Start</button>
+        <button [routerLink]='["/login"]'>Start</button>
         }
     </div>
 </div>
