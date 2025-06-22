@@ -1,0 +1,40 @@
+<div class="fill-email-step__container">
+    <div class="fill-email-step__back">
+        <img [routerLink]='["/login"]' src="./back.png">
+    </div>
+    <div class="fill-email-step__header">
+        <h1>Please provide your email address</h1>
+        <p>We need this information to verify your identity</p>
+    </div>
+    <form action="" method="post" class="fill-email-step__form">
+        <div class="floating-label-input">
+           <input
+                type="email"
+                id="email"
+                [value]="email()"
+                (input)="updateEmail($event)"
+                required
+            />
+            <label
+                for="email"
+                [class.active]="email()"
+            >Please enter your email</label>
+        </div>
+        <div class="fill-email-step__form">
+            <input [disabled]="!email()" (click)="next.emit()" type="submit" value="Submit"/>
+        </div>
+    </form>
+     <div class="fill-email-step__footer">
+        <p>or</p>
+        <div class="social-login">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./google.png" alt="" srcset="">
+                <span>Register with google</span>
+            </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./apple_white.png" alt="" srcset="">
+                <span>Register with apple</span>
+            </a>
+        </div>
+    </div>
+</div>

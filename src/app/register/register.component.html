@@ -1,0 +1,14 @@
+<div class="wizard">
+    <div class="slider-progress">
+       <span class="dot" [class.active]="step() >= 0"></span>
+       <span class="dot" [class.active]="step() >= 1"></span>
+       <span class="dot" [class.active]="step() === 2"></span>
+    </div>
+    @if (step() === 0) {
+        <fill-email-step (next)="nextStep()" />
+    } @else if (step() === 1) {
+        <activation-account-step (next)="nextStep()" (back)="prevStep()"/>
+    } @else if (step() === 2) {
+        <account-info-step (back)="prevStep()" />
+    }
+</div>

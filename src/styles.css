@@ -17,7 +17,11 @@
 
     --Black-900: #10182B;
 
+    --Alerts-Info: #49AFF9;
+
     --Light-UI-Element-contrast-30: color-mix(in srgb, var(--UI-Black) 30%, transparent);
+    --Light-UI-Element-Similar: #ffffff;
+
     --Light-Text-White: #ffffff;
     --Light-Text-White-Gray: #333333;
     --Light-Background-Element: #ffffff;

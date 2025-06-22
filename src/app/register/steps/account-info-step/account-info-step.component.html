@@ -1,0 +1,47 @@
+<div class="account-info-step__container">
+    <div class="account-info-step__back">
+        <img (click)="back.emit()" src="./back.png">
+    </div>
+    <div class="account-info-step__header">
+        <h1>It's a pleasure to meet you!</h1>
+        <p>Sign up and get started</p>
+    </div>
+    <form action="" method="post" class="account-info-step__form">
+        <div class="floating-label-input">
+            <input [value]="firstName()" (input)="updateFirstName($event)" type="text" id="firstName" required />
+            <label for="firstName" [class.active]="firstName()">Please enter your first name</label>
+        </div>
+        <div class="floating-label-input">
+            <input [value]="lastName()" (input)="updateLastName($event)" type="text" id="lastName" required />
+            <label for="lastName" [class.active]="lastName()">Please enter your last name</label>
+        </div>
+        <div class="floating-label-input">
+            <input [type]="isVisible() ? 'text' : 'password'" id="password" [value]="password()"
+                (input)="updatePassword($event)" required />
+            <label for="password" [class.active]="password()">Please enter your password</label>
+            <button type="button" class="eye-icon" (click)="toggleVisibility()" aria-label="Toggle password visibility">
+                <img [src]="isVisible() ? './eye_line.svg' : './eye_off.svg'" alt="Toggle visibility" width="24"
+                    height="24" />
+            </button>
+        </div>
+        <div class="floating-label-input">
+            <input [type]="isVisible() ? 'text' : 'password'" [value]="confirmPassword()"
+                (input)="updateConfirmPassword($event)" id="confirmPassword" required />
+            <label for="confirmPassword" [class.active]="confirmPassword()">Confirmation password</label>
+        </div>
+        <div class="account-info-step__button">
+            <input type="submit" [disabled]="!formValid()" (click)="register()" value="Register" />
+        </div>
+        <div class="account-info-step__footer">
+            <label class="agree-container">
+                <input type="checkbox" [checked]="agree()" (change)="updateAgree($event)" />
+                <span class="checkmark"></span>
+                <span class="text">
+                    By clicking "Agree," you accept the
+                    <a href="/terms" target="_blank">terms</a> and
+                    <a href="/conditions" target="_blank">conditions</a>.
+                </span>
+            </label>
+        </div>
+    </form>
+</div>

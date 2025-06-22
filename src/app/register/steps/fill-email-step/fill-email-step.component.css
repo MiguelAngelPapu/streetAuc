@@ -1,0 +1,172 @@
+.fill-email-step__container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.fill-email-step__back{
+    width: 100%;
+    padding-top: 2vh;
+}
+.fill-email-step__back img{
+    cursor: pointer;
+}
+.fill-email-step__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    margin-top: 10vh;
+}
+
+.fill-email-step__header h1 {
+    font-family: "Ag Heading 1";
+    color: var(--Black-900);
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.fill-email-step__header p {
+    font-family: "Ag Paragraph Large";
+    font-size: 16px;
+    color: var(--UI-Gray);
+    letter-spacing: -0.5px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.fill-email-step__form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+/******* Inpuy con la animacion del label *******/
+
+.floating-label-input {
+    width: 100%;
+    position: relative;
+    border: 1px solid var(--UI-Disable);
+    border-radius: 8px;
+    padding: 0 16px;
+    background-color: var(--Light-Background-Element);
+}
+
+.floating-label-input input {
+    background: transparent;
+    width: 100%;
+    height: 58px;
+    border: none;
+    outline: none;
+    margin: 0;
+    z-index: 1;
+    padding-top: 18px;
+    position: relative;
+    font-family: "Ag Paragraph Small";
+    font-size: 16px;
+    color: var(--UI-Black);
+    line-height: 18px;
+    letter-spacing: 0px;
+}
+
+.floating-label-input label {
+    position: absolute;
+    z-index: 2;
+    left: 16px;
+    top: 16px;
+    transition: all 0.2s ease-out;
+    background-color: transparent;
+    pointer-events: none;
+    font-family: "Ag Paragraph Large";
+    color: var(--UI-Gray);
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+}
+
+.floating-label-input input:focus+label,
+.floating-label-input label.active {
+    top: 11px;
+    font-family: "Ag Body S Regular";
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+}
+/******************************************/
+.fill-email-step__form{
+    width: 100%;
+}
+.fill-email-step__form > input{
+    width: 100%;
+    height: 58px;
+    background-color: var(--Black-900);
+    color: var(--Light-Text-White);
+    font-family: "Ag Button Large";
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 22px;
+}
+
+.fill-email-step__footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+.fill-email-step__footer p{
+    font-family: "Ag TX2";
+    color: var(--Black-900);
+    font-size: 15px;
+    letter-spacing: -1%;
+    line-height: auto;
+}
+
+.social-login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+.social-login a{
+    width: 100%;
+    height: 58px;
+    text-decoration: none;
+    background-color: var(--Light-Background-Element);
+    color: var(--Light-Text-White-Gray);
+    font-family: "Ag Button Large";
+    border-radius: 8px;
+    border: 1px solid var(--UI-Disable);
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.social-login a:last-child{
+    background-color: var(--Light-Background-Element-Gray);
+    color: var(--Light-Text-White);
+}
+.social-login a img{
+    width: 48px;
+    height: 48px;
+}

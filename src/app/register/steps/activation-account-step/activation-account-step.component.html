@@ -1,0 +1,16 @@
+<div class="activation-account-step__container">
+    <div class="activation-account-step__back">
+        <img (click)="back.emit()" src="./back.png">
+    </div>
+    <div class="activation-account-step__header">
+        <h1>Please check your email for the account configuration link</h1>
+        <p>An account activation link has been sent to your email address</p>
+    </div>
+    <div class="activation-account-step__form">
+        <button (click)="next.emit()">Open Email</button>
+    </div>
+    <div class="activation-account-step__footer">
+        <p>Haven’t received the configuration link?</p>
+         <a (click)="resend()">Resend it</a>
+    </div>
+</div>
