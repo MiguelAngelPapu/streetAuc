@@ -6,7 +6,7 @@
         <h1>It's great to have you back!</h1>
         <p>Sign in and continue your journey</p>
     </div>
-    <form action="" method="post" class="sign-in-form">
+    <form (submit)="$event.preventDefault();" action="" method="post" class="sign-in-form">
         <div class="floating-label-input">
            <input
                 type="email"
@@ -48,7 +48,7 @@
             </button>
         </div>
         <div class="login-form">
-            <input type="submit" value="Sign In"/>
+            <input [routerLink]='["/home"]' type="submit" value="Sign In"/>
         </div>
         <div class="sign-in-footer-links">
             <p>New user? <a href="/register">Register</a></p>

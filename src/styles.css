@@ -73,3 +73,11 @@
     font-family: "Ag Button Small";
     src: url(/font/Poppins/Poppins-Medium.ttf);
 }
+@font-face {
+    font-family: "Ag Hero Medium";
+    src: url(/font/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Ag Trending Medium";
+    src: url(/font/Poppins/Poppins-SemiBold.ttf);
+}

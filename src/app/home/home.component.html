@@ -1,0 +1,167 @@
+<header>
+    <img src="./user_profile.png">
+    <div class="header-content">
+        <h1>Helo, Ujang</h1>
+        <p>Let’s Start The Auction!</p>
+    </div>
+</header>
+<main>
+    <form action="" method="post" class="search-form">
+        <div class="floating-label-input">
+           <input
+                id="search"
+                type="search"
+                [value]="search()"
+                (input)="search.set($any($event.target).value)"
+                required
+            />
+            <label
+                for="search"
+                [class.active]="search()"
+            >Abstract, Caligraphy..</label>
+            <button
+                type="button"
+                class="eye-icon"
+            >
+                <img
+                    src="./search.svg"
+                    width="24"
+                    height="24"
+                />
+            </button>
+        </div>
+        <div class="search-input">
+            <input type="submit" value=""/>
+            <img src="./filtter.svg">
+        </div>
+    </form>
+    <section class="hero">
+        <article class="hero-content">
+            <h2>Popular Tags</h2>
+            <a href="">View All</a>
+        </article>
+        <article class="hero-tags">
+            <div class="tag">
+                <img src="./tooltip.png">
+                <div class="tag-content">
+                    <h3>Abstract</h3>
+                    <span>On everything today</span>
+                </div>
+                <p>Start from Rp200.000</p>
+                <button>Explore</button>
+            </div>
+            <div class="tag">
+                <img src="./tooltip_2.png">
+                <div class="tag-content">
+                    <h3>Nature</h3>
+                    <span>On everything today</span>
+                </div>
+                <p>Start from Rp200.000</p>
+                <button>Explore</button>
+            </div>
+        </article>
+    </section>
+    <section class="trending">
+        <article class="trending-header">
+            <h2>Trending Now</h2>
+            <a href="">View All</a>
+        </article>
+        <article class="trending-content">
+            <div class="trending-item">
+                <div class="trending-item-header">
+                    <img src="./creator.png">
+                    <div class="trending-item-info">
+                        <div class="trending-item-details">
+                            <img src="./user_profile_2.png">
+                            <div class="trending-item-creator">
+                                <h3>Creator</h3>
+                                <span>Andrew</span>
+                            </div>
+                        </div>
+                        <a href="">
+                            <img src="./heart.svg" >
+                        </a>
+                    </div>
+                </div>
+                <div class="trending-item-image">
+                    <h3>Sunset Orange</h3>
+                    <span>Start from</span>
+                    <p>Rp 100.000</p>
+                </div>
+            </div>
+            <div class="trending-item">
+                <div class="trending-item-header">
+                    <img src="./creator_2.png">
+                    <div class="trending-item-info">
+                        <div class="trending-item-details">
+                            <img src="./user_profile_3.png">
+                            <div class="trending-item-creator">
+                                <h3>Creator</h3>
+                                <span>John</span>
+                            </div>
+                        </div>
+                        <a href="">
+                            <img src="./heart.svg" >
+                        </a>
+                    </div>
+                </div>
+                <div class="trending-item-image">
+                    <h3>Ginger Boy</h3>
+                    <span>Start from</span>
+                    <p>Rp 200.000</p>
+                </div>
+            </div>
+            <div class="trending-item">
+                <div class="trending-item-header">
+                    <img src="./creator_3.png">
+                    <div class="trending-item-info">
+                        <div class="trending-item-details">
+                            <img src="./user_profile_4.png">
+                            <div class="trending-item-creator">
+                                <h3>Creator</h3>
+                                <span>Ujang</span>
+                            </div>
+                        </div>
+                        <a href="">
+                            <img src="./heart.svg" >
+                        </a>
+                    </div>
+                </div>
+                <div class="trending-item-image">
+                    <h3>Sunset Orange</h3>
+                    <span>Start from</span>
+                    <p>$195.00</p>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+<footer>
+    <nav>
+        <li>
+            <a href="">
+                <img src="./house.svg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./compass.svg" alt="">
+            </a>
+        </li>
+        <li class="add">
+            <a href="">
+                <img src="./add_large_line.svg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./bell.svg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="./user.svg" alt="">
+            </a>
+        </li>
+    </nav>
+</footer>

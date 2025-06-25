@@ -8,8 +8,8 @@ import { RouterModule } from '@angular/router';
   styleUrl: './sign-in.component.css'
 })
 export class SignInComponent {
-    email = signal('');
-    password = signal('');
+    email = signal('demo@gmail.com');
+    password = signal('123');
 
     isVisible = signal(false);
     toggleVisibility() {
