@@ -24,5 +24,9 @@ export const routes: Routes = [
     {
         path: 'home',
         loadComponent: () => import('./home/home.component').then(h => h.HomeComponent)
+    },
+    {
+        path: 'notification',
+        loadComponent: () => import('./notification/notification.component').then(n => n.NotificationComponent )
     }
 ];

@@ -1,0 +1,101 @@
+header{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    background-color: var(--Light-Background-Screen);
+}
+header > h1{
+    width: 100%;
+    text-align: center;
+    font-family: "Ag Heading 2";
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    color: var(--UI-Black);
+}
+main{
+    padding: 0 5%;
+    height: 100svh;
+    background-color: var(--Light-Background-Screen);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+section > h5{
+    font-family: "Body XL Regular";
+    color: var(--Light-Text-Secondary);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+.container-message{
+    background: var(--Light-Background-Element);
+    padding: 5%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.container-message > p{
+    font-family: "Body L Regular";
+    color: var(--Light-Text-Primary);
+    font-family: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+.message-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.message-time strong{
+    font-family: "Heading H5";
+    color: var(--Light-Text-Primary);
+    font-weight: normal;
+    font-family: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+.message-time span{
+    font-family: "Body M Regular";
+    color: var(--Light-UI-Element-Gray);
+    font-family: 12px;
+    line-height: 18px;
+    letter-spacing: 0px;
+}
+footer{
+    box-shadow: 0 0 1px var(--UI-Gray);
+    background: var(--UI-White);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+}
+footer nav{
+    height: 100%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer nav li{
+    list-style: none;
+    cursor: pointer;
+}
+footer nav li.add{
+    background: var(--UI-Black);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

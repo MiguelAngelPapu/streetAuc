@@ -21,9 +21,13 @@
 
     --Light-UI-Element-contrast-30: color-mix(in srgb, var(--UI-Black) 30%, transparent);
     --Light-UI-Element-Similar: #ffffff;
+    --Light-UI-Element-Gray: #727272;
 
     --Light-Text-White: #ffffff;
+    --Light-Text-Primary: #050505;
+    --Light-Text-Secondary: #727272;
     --Light-Text-White-Gray: #333333;
+    --Light-Background-Screen: #F5F5F5;
     --Light-Background-Element: #ffffff;
     --Light-Background-Element-Gray: #333333;
 }
@@ -50,7 +54,23 @@
     src: url(/font/Poppins/Poppins-Medium.ttf);
 }
 @font-face {
+    font-family: "Heading H5";
+    src: url(/font/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
     font-family: "Ag Body S Regular";
+    src: url(/font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Body L Regular";
+    src: url(/font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Body M Regular";
+    src: url(/font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Body XL Regular";
     src: url(/font/Poppins/Poppins-Regular.ttf);
 }
 @font-face {
